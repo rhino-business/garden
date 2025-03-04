@@ -1,0 +1,233 @@
+      .container {
+          display: grid;
+          border: 0.01rem solid #04DA9E;
+          background: #FFFFFE;
+      }
+      .wrapper {
+          display: grid;
+          grid-template-columns: 2fr 2fr;
+          border: 0.01rem solid transparent;
+          place-items: center;
+          margin-top: 2rem;
+      }
+      .content_block {
+          display: grid;
+          border: 0.02rem solid transparent;
+          width: auto;
+          height: 20rem; 
+      }
+      #image_block {
+          display: grid;
+          border: 0.02rem solid transparent;
+          width: auto; 
+          height: auto;
+          background: linear-gradient(20deg, #FFFFFE, #04DA9E), url('../images/evergreens.jpg');  
+          background-blend-mode: soft-light;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          clip-path: polygon(47% 0, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);  
+      }
+      #button_element {
+           -webkit-appearance: none;
+           -moz-appearance: none;
+           appearance: none; 
+           display: grid;
+           position: absolute;
+           width: 10rem;
+           height: 4rem;
+           margin-top: 2rem;
+           margin-left: 2rem;
+           background: rgba(35, 35, 35, 0.4);  
+           border-radius: 0.3rem;
+           cursor: pointer;
+           border: 0.1rem solid #FFFFFE; 
+           color: #FFFFFE;
+           z-index: 55;
+           place-items: center;
+           font-size: 1.5rem; 
+           font-family: "Cuprum";
+           box-shadow: 0.1rem 0.2rem 1rem 0.1rem inset #FFFFFE;
+      }
+      #button_element:hover {
+          box-shadow: 0 0 0.5rem 0.1rem #FFFFFE;
+      }
+    .element {
+      display: grid;
+      position: relative;
+      max-width: 20rem;
+      margin: 2rem;
+    }
+    .element #el_top {
+       display: grid;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       border-top: 0.07rem solid #04DA9E;
+       border-bottom: 0.07rem solid #04DA9E;
+    }
+    .element #el_left {
+       display: grid;
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       border-left: 0.07rem solid #04DA9E;
+       border-right: 0.07rem solid #04DA9E;
+    }
+.element #round {
+    display: grid;
+    top: 0;
+    left: 0;
+    border: 0.07rem solid #04DA9E;
+    border-top: 0.07rem solid #FFFFFE;
+    border-left: 0.07rem solid #FFFFFE;
+    width: 4rem;
+    height: 4rem;
+    background: #FFFFFE;
+    border-radius: 0rem 0rem 0.6rem 0rem;
+    z-index: 50;
+}
+ #round::after {
+    display: grid;
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background: #4DDCF5;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    place-items: center;
+ }
+ .card_title {
+     display: grid;
+     border-bottom: 0.5rem solid #04DA9E;
+     min-height: 2.5rem;
+     max-height: 2.5rem;
+     place-content: center;
+ }
+ .card_title p {    
+     font-family: "Cuprum";
+     font-size: 1.6rem;
+     margin-top: -3rem;
+     margin-left: 3rem;
+     color: #86B102;
+ }
+ .card_text {
+     display: grid;
+     padding: 0.8rem;
+ }
+  .card_text p {    
+     font-family: "Cuprum";
+     font-size: 1.2rem;
+     color: #9C9C9A;
+     line-height: 1.8rem; 
+     text-align: center;
+  }
+  .info_card {
+      display: grid;
+      position: relative;
+      box-sizing: padding-box;
+      padding: 0.3rem;
+      border: 0.04rem solid #9C9C9A; 
+      width: 10rem;
+      height: auto; 
+      margin-top: 4rem;
+      justify-items: center;
+      background: #FFFFFE; 
+      border-radius: 0.2rem;
+  }
+  .info_card p {
+     font-family: "Cuprum";
+     font-size: 1.1rem; 
+     color: #86B102; 
+     line-height: 1.6rem;
+     text-align: center;
+     font-weight: bold;  
+  }
+  .info_card::before {
+      display: grid;
+      content: "";
+      position: absolute;
+      border: 0.01rem solid #FFFFFE;
+      width: 9.4rem;
+      height: 2rem;
+      background: #FFFFFE;
+      margin-top: -1rem;
+      
+   }
+   .img_card {
+      display: grid;
+      background-clip: content-box;
+      padding: 0.17rem;
+      border: 0.2rem dashed #04DA9E;
+      border-radius: 50%;
+      width: 8.5rem;
+      height: 8.5rem;
+      margin-top: -4.7rem;
+      background-image: url('../images/plants.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 20;
+      box-shadow: 0 0 0.1rem 0.2rem inset #FFFFFE;
+   }
+  
+                 @font-face {
+                    font-family: "Cuprum"; 
+                    src: url("../fonts/dg45_pLmvrkcOkBnKsOzXyGWTBcmg-X6VjvYJw.woff2") format("woff2");  
+                    font-style: normal; 
+                    font-weight: normal; 
+                    font-display: block;
+                 }
+  
+  
+    @media(min-width: 1950px) {
+        .container {
+            width: 1400px;
+            place-self: center;
+        }
+    } 
+    @media(max-width: 800px) {
+        .wrapper {
+            grid-template-columns: 2fr;
+        }
+        .info_card {
+            margin-bottom: 1rem;
+        }
+    } 
+    @media(max-width: 400px) {
+        #button_element {
+           width: 8rem; 
+           font-size: 1.4rem;  
+           margin-left: 1rem;
+        }
+    }
+    @media(max-width: 279px) {
+        .container {
+            display: none;
+        }
+    }  
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
