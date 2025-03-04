@@ -52,32 +52,32 @@
       #button_element:hover {
           box-shadow: 0 0 0.5rem 0.1rem #FFFFFE;
       }
-    .element {
-      display: grid;
-      position: relative;
-      max-width: 20rem;
-      margin: 2rem;
-    }
-    .element #el_top {
-       display: grid;
-       position: absolute;
-       top: 0;
-       left: 0;
-       right: 0;
-       bottom: 0;
-       border-top: 0.07rem solid #04DA9E;
-       border-bottom: 0.07rem solid #04DA9E;
-    }
-    .element #el_left {
-       display: grid;
-       position: absolute;
-       top: 0;
-       left: 0;
-       right: 0;
-       bottom: 0;
-       border-left: 0.07rem solid #04DA9E;
-       border-right: 0.07rem solid #04DA9E;
-    }
+      .element {
+          display: grid;
+          position: relative;
+          max-width: 20rem;
+          margin: 2rem;
+      }
+      .element #el_top {
+          display: grid;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-top: 0.07rem solid #04DA9E;
+          border-bottom: 0.07rem solid #04DA9E;
+      }
+      .element #el_left {
+          display: grid;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-left: 0.07rem solid #04DA9E;
+          border-right: 0.07rem solid #04DA9E;
+      }
 .element #round {
     display: grid;
     top: 0;
@@ -90,7 +90,7 @@
     background: #FFFFFE;
     border-radius: 0rem 0rem 0.6rem 0rem;
     z-index: 50;
-}
+ }
  #round::after {
     display: grid;
     content: "";
@@ -174,17 +174,14 @@
       z-index: 20;
       box-shadow: 0 0 0.1rem 0.2rem inset #FFFFFE;
    }
-  
-                 @font-face {
-                    font-family: "Cuprum"; 
-                    src: url("../fonts/dg45_pLmvrkcOkBnKsOzXyGWTBcmg-X6VjvYJw.woff2") format("woff2");  
-                    font-style: normal; 
-                    font-weight: normal; 
-                    font-display: block;
-                 }
-  
-  
-    @media(min-width: 1950px) {
+   @font-face {
+      font-family: "Cuprum"; 
+      src: url("../fonts/dg45_pLmvrkcOkBnKsOzXyGWTBcmg-X6VjvYJw.woff2") format("woff2");  
+      font-style: normal; 
+      font-weight: normal; 
+      font-display: block;
+   }
+   @media(min-width: 1950px) {
         .container {
             width: 1400px;
             place-self: center;
